@@ -1,0 +1,101 @@
+
+
+.myHeader {
+    font-size: 2rem;
+    background-color: #24364a;
+    color: #e1e7ee;
+    margin-bottom: 24px;
+    padding: 20px;
+    border: 4px solid #000000;
+    border-radius: 9px;
+}
+
+
+div.mycontainer {
+    width:100%;
+    overflow:auto;
+}
+div.mycontainer div {
+    width:25%;  
+    float:left;
+    padding: 6px;
+    margin: 3px;
+}
+
+.keyword {
+    color: #020000;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+table, th {
+    border: 2px solid black; 
+    border-collapse: collapse;
+    padding: 5px;
+    background-color: #d5d5d5;
+}
+
+td {
+    border: 1px solid black; 
+    border-collapse: collapse;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+
+/* Not used here */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 24px;
+    background: #fafafa;
+    color: #222;
+}
+
+.external-box {
+    background-color: #cfe8ff;
+    border: 1px solid #3b92f6;
+    padding: 16px;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+.section-title {
+    margin: 0 0 6px 0;
+    font-size: 1rem;
+
+}
+
+
+/* ID Selector */
+#unique-element {
+    font-weight: bold;
+    color: #d9534f;
+    padding: 10px;
+    border: 1px solid #578453;
+    margin: 0 0 6px 0;
+}
+
+/* Universal Selector for anything with
+   the selectors-demo ID */
+#selectors-demo * {
+    outline: 1px dashed rgba(59,130,246,0.7);
+}
+
+/* Selector for for p if it has
+   the selectors-demo ID */
+#selectors-demo p {
+    outline: 2px solid rgba(200,40,246,0.8);
+}
+
+/* Appliees only to children within an existing
+   <div> block, for example. They need to have
+   the proper class="parent" and class="child" blocks.
+   Grandchildren don't count as children */
+#selectors-demo .parent > .child {
+    background-color: #e0f7fa;
+    border: #222 1px dashed;
+} 
