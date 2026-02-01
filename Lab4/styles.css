@@ -32,6 +32,22 @@
 }
 
 
+/* Navbar styles, making the toggler a darker colour */
+
+/* Navbar toggler: make icon darker for visibility */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23222' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Slightly darker on hover/focus */
+.navbar-light .navbar-toggler:focus .navbar-toggler-icon,
+.navbar-light .navbar-toggler:hover .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
+
 /* Styles for Carousel with captions */
 
 /* Carousel wrapper to limit width and center it */
@@ -159,3 +175,4 @@
 @media (max-width: 400px) {     /* experimenting with making other objects grow/shrink based on screen size */
   .pokeball-fixed { width: 48px; right: 12px; bottom: 12px; }
 }
+
