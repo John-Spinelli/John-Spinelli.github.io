@@ -73,6 +73,11 @@
   text-align: center;
 }
 
+#PokeCarouselCaptions .carousel-caption h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* Make it responsive (page min width is 800px) */
 @media (max-width: 799px) {
   #carouselExampleCaptions .carousel-caption {
