@@ -1,0 +1,131 @@
+
+/* Styles for grid - Pokemon types */
+
+.grass {
+    color: #020000;
+    background-color: rgb(74, 236, 74);
+    border: #008000 solid 2px;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 2px;
+    text-align: center;
+}
+
+.fire {
+    color: #000000;
+    background-color: rgb(230, 114, 114);
+    border: #800000 solid 2px;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 2px;
+    text-align: center;
+}
+
+.water {
+    color: #000000;
+    background-color: rgb(74, 171, 236);
+    border: #000980 solid 2px;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 2px;
+    text-align: center;
+}
+
+
+/* Styles for Carousel with captions */
+
+/* Carousel wrapper to limit width and center it */
+.carousel-wrapper {
+    width: 90%;
+    max-width: 1100px;
+    min-width: 600px; /* safe minimum */
+    margin: 10px auto;
+    border: black 2px solid;
+    border-radius: 2px;
+}
+
+/* Image formatting */
+.carousel-wrapper .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Caption text formatting */
+.carousel-wrapper .p{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+/* Formatting the default behaviour for captions in the carousel */
+#PokeCarouselCaptions .carousel-caption {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%); /* centers the caption */
+  width: 40%;                  /* controls width of the caption box */
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.871);   /* white box behind text, alpha */
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Make it responsive (page min width is 800px) */
+@media (max-width: 799px) {
+  #carouselExampleCaptions .carousel-caption {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+/* Responsive size - change sizes at 800px and 1200px */
+@media (min-width: 800px) {
+    .carousel-wrapper {
+        width: 75%;
+    }
+}
+@media (min-width: 1200px) {
+    .carousel-wrapper {
+        width: 60%;
+    }
+}
+
+/* Make carousel arrows dark grey instead of white */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* SVG icon with slightly darker grey fill (#222) */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23222' viewBox='0 0 8 8'%3E%3Cpath d='M4.146 0.146a.5.5 0 1 1 .708.708L1.707 4l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5z'/%3E%3C/svg%3E");
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Flip the next icon so it points right */
+.carousel-control-next-icon {
+  transform: rotate(180deg);
+}
+
+
+/* Circular box around the icon, click to navigate */
+.carousel-control-prev, .carousel-control-next {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  top: 50%;                         /* vertically center */ 
+  z-index: 2;
+}
+
+/* Ensure controls remain visible on darker images */
+
+/* Normal colour */
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* Hover colour */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.919);
+}
