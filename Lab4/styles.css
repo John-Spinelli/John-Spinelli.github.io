@@ -38,7 +38,6 @@
 .carousel-wrapper {
     width: 90%;
     max-width: 1100px;
-    min-width: 600px; /* safe minimum */
     margin: 10px auto;
     border: black 2px solid;
     border-radius: 2px;
@@ -81,7 +80,7 @@
 /* Make it responsive (page min width is 800px) */
 @media (max-width: 799px) {
   #carouselExampleCaptions .carousel-caption {
-    width: 90%;
+    width: 80%;
     max-width: none;
   }
 }
@@ -97,6 +96,9 @@
         width: 60%;
     }
 }
+
+
+/* Formatting for carousel arrows, grey arrows with circular background */
 
 /* Make carousel arrows dark grey instead of white */
 .carousel-control-prev-icon,
@@ -134,6 +136,10 @@
 .carousel-control-prev:hover, .carousel-control-next:hover {
   background-color: rgba(255, 255, 255, 0.919);
 }
+
+
+
+/* Pokeball fixed image styles */
 
 /* Pokeball image, fixed bottom-right */
 .pokeball-fixed {
