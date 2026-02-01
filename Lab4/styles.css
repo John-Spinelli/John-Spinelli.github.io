@@ -77,7 +77,7 @@
   font-weight: bold;
 }
 
-/* Make it responsive (page min width is 800px) */
+/* Make it responsive - if page is less than 800px, width is 80% */
 @media (max-width: 799px) {
   #carouselExampleCaptions .carousel-caption {
     width: 80%;
@@ -85,7 +85,7 @@
   }
 }
 
-/* Responsive size - change sizes at 800px and 1200px */
+/* Responsive size - change sizes above 800px and 1200px */
 @media (min-width: 800px) {
     .carousel-wrapper {
         width: 75%;
