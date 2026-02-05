@@ -1,32 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<title>Johnathan's Website</title>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Statistics Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <h1>Johnathan Spinelli</h1>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">My Statistics Portfolio</h1>
+      <nav class="main-nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <h2>501410059</h2>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Showcasing my data analysis & statistical modeling projects</h2>
+        <p class="lead">A selection of projects using R, Python, and reproducible workflows. Click a project to view the source or report (placeholder links).</p>
+        <div class="joke">📊 Why did the statistician break up with the normal distribution? Because their relationship wasn't on the same scale!</div>
+      </div>
+    </section>
 
+    <section id="projects" class="projects container">
+      <h3>Featured Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <a class="card-link" href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
+            <img src="Images/BYTE%20Panel.jpeg" alt="BYTE Panel project thumbnail">
+            <div class="card-content">
+              <h4>Exploratory Analysis on Survey Data</h4>
+              <p>Interactive dashboards + descriptive statistics.</p>
+            </div>
+          </a>
+        </article>
 
-    <p>Welcome to my page! I'm a staff member working in the CS Department at TMU. I run the academic help centre, known as the Debug Room.
-        The Debug Room provides services to students enrolled in first and second year CPS courses, helping students understand their lecture material and completing their lab assignments.
-        The Debug Room also support upper year students with services such as: </p>
+        <article class="card">
+          <a class="card-link" href="https://posit.co" target="_blank" rel="noopener noreferrer">
+            <img src="Images/ColouredHeadshot.png" alt="Coloured headshot project thumbnail">
+            <div class="card-content">
+              <h4>Regression Modeling and Inference</h4>
+              <p>Model selection, diagnostics, and interpretability.</p>
+            </div>
+          </a>
+        </article>
 
-    <ul>
-        <li>Campus Resources</li>
-        <li>Course Concerns</li>
-        <li>Co-op/Career Guidance</li>
-    </ul>
+        <article class="card">
+          <a class="card-link" href="https://cran.r-project.org" target="_blank" rel="noopener noreferrer">
+            <img src="Images/RingPicture.JPG" alt="Ring picture project thumbnail">
+            <div class="card-content">
+              <h4>Time Series Forecasting</h4>
+              <p>ARIMA, ETS, and ensemble forecasts.</p>
+            </div>
+          </a>
+        </article>
 
+        <article class="card">
+          <a class="card-link" href="https://towardsdatascience.com" target="_blank" rel="noopener noreferrer">
+            <img src="Images/campus%20snow.JPG" alt="Campus snow project thumbnail">
+            <div class="card-content">
+              <h4>Classification & ML Pipelines</h4>
+              <p>Cross-validation, feature engineering, and metrics.</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
 
-    <p>I graduated from McMaster's Mechatronics Engineering program, so I don't really have a formal CS education. To make up
-        for any missing knowledge, I've been taking CS courses through the Chang School.</p>
+    <section id="about" class="about container">
+      <h3>About Me</h3>
+      <p>I build reproducible statistical analyses and data visualizations that help tell stories with data. I enjoy tidy workflows, clear plots, and sharing findings through reproducible reports.</p>
+    </section>
 
-    <p>Completed courses:</p>
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <p>Get in touch: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>Find resources and inspiration on <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">Kaggle</a>, <a href="https://posit.co" target="_blank" rel="noopener noreferrer">Posit</a>, and <a href="https://towardsdatascience.com" target="_blank" rel="noopener noreferrer">Towards Data Science</a>.</p>
+    </section>
+  </main>
 
-    <ul>
-        <li>CCPS510 Database Systems</li>
-        <li>CCPS530 Web System Development (in progress)</li>
-    </ul>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 My Statistics Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+</html>
