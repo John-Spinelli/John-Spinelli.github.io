@@ -1,0 +1,23 @@
+
+
+.cycle-image-wrap{
+    width: auto;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+}
+
+.cycle-image-wrap img {
+    height: 400px;
+    width: auto;
+    object-fit: contain; /* Ensures the image fits within the container without distortion */
+    border: 1px solid black;
+    margin: 4px;
+}
+
+
+.img-caption{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+}
