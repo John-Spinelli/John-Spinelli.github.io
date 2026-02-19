@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="myScript.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #aad3f0;">
+        <a class="navbar-brand" >Johnathan Spinelli Lab 6</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://hackerthemes.com/bootstrap-cheatsheet/" style="color: rgb(43, 54, 131)">BootstrapCheetSheet <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://john-spinelli.github.io/Lab3/index.html" style="color: rgb(43, 54, 131)">Lab3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://john-spinelli.github.io/Lab4/index.html" style="color: rgb(43, 54, 131)">Lab4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://john-spinelli.github.io/Lab5/index.html" style="color: rgb(43, 54, 131)">Lab5</a>
+            </li>
+            
+            </ul>
+            
+        </div>
+    </nav>
+
+    <h1 style="padding-top: 80px; text-align: center;">Car Details</h1>
+
+    <p style="text-align: center;">Click a button to load car details</p>
+
+    <div class="text-center">
+        <button id="loadCarDetails" class="btn btn-primary" style="margin: 10px;" onclick="loadCar('mercedes.json')">Mercedes</button>
+        <button id="loadCarDetails" class="btn btn-primary" style="margin: 10px;" onclick="loadCar('ferrari.json')">Fictional Ferrari</button>
+        <button id="loadCarDetails" class="btn btn-primary" style="margin: 10px;" onclick="clearGrid()">Clear</button>
+    </div>
+
+    <!-- Equal width cols, same on all screen sizes -->
+    <div class="container">
+        <div class="row" id="row1">
+            <div class="col my-col" id="name-col">
+                CAR NAME
+            </div>
+            <div class="col my-col" id="year-col">
+                YEAR
+            </div>
+        </div>
+
+        <div class="row" id="row2">
+            <div class="col my-col" id="engine-type-col">
+                ENGINE TYPE
+            </div>
+            <div class="col my-col" id="engine-size-col">
+                ENGINE SIZE
+            </div>
+            <div class="col my-col" id="engine-config-col">
+                ENGINE CONFIG
+            </div>
+        </div>
+    </div>
+
+    <img src="no_car.png" id="car-image" style="display: block; margin: 20px auto; height: 400px; width: auto; " alt="Car Image">
+
+</body>
+</html>
