@@ -6,6 +6,10 @@ app.use(express.urlencoded({     // to support URL-encoded bodies
   extended: false
 })); 
 
+app.get('/', function(req, res){
+   res.redirect('/bookinventory/list');
+});
+
 var books = [       // title, author, publisher, date, and website
   {'title':'Dune', 'author':'Frank Herbert', 'publisher':'Ace Books', 'date':'1965-08-01', 'website':'https://en.wikipedia.org/wiki/Dune_(novel)'},
   {'title':'The Hitchhiker\'s Guide to the Galaxy', 'author':'Douglas Adams', 'publisher':'Pan Books', 'date':'1979-10-12', 'website':'https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy'},
@@ -26,7 +30,7 @@ app.get('/bookinventory/list', function(req, res){
     }
     html += '</p>'
 
-   res.send('List of books: ' + html + '<br><a href="/bookinventory/add">Add a new book</a> ');
+   res.send('List of Johnathan Spinelli\'s books: ' + html + '<br><a href="/bookinventory/add">Add a new book</a> ');
 });
 
 // Prompts user with a form to give new book information.
