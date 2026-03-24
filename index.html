@@ -1,95 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Statistics Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Design Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="site-title">My Statistics Portfolio</h1>
-      <nav class="main-nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+  <div class="glitch-bg"></div>
+  <header class="hero">
+    <div class="topbar">
+      <div class="brand">Pixel Quest Studio</div>
+      <nav class="topnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="index.html#projects">Projects</a>
       </nav>
     </div>
+    <h1>Pixel Quest Studio</h1>
+    <p>Video Game Level & Systems Design Portfolio</p>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h2>Showcasing my data analysis & statistical modeling projects</h2>
-        <p class="lead">A selection of projects using R, Python, and reproducible workflows. Click a project to view the source or report (placeholder links).</p>
-        <div class="joke">📊 Why did the statistician break up with the normal distribution? Because their relationship wasn't on the same scale!</div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects container">
-      <h3>Featured Projects</h3>
+  <main class="container">
+    <section class="projects">
+      <h2>Featured Projects</h2>
       <div class="grid">
+
         <article class="card">
-          <a class="card-link" href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
-            <img src="Images/BYTE%20Panel.jpeg" alt="BYTE Panel project thumbnail">
-            <div class="card-content">
-              <h4>Exploratory Analysis on Survey Data</h4>
-              <p>Interactive dashboards + descriptive statistics.</p>
-            </div>
-          </a>
+          <img src="Images/BYTE Panel.jpeg" alt="BYTE Panel project" />
+          <h3>BYTE Panel: Cyber Ninja Arena</h3>
+          <p>Multiplayer objective-based arena with modular cyber upgrades.</p>
+          <a href="https://store.steampowered.com/app/1341400/Hades/" target="_blank" rel="noopener">View prototype (Steam placeholder)</a>
         </article>
 
         <article class="card">
-          <a class="card-link" href="https://posit.co" target="_blank" rel="noopener noreferrer">
-            <img src="Images/ColouredHeadshot.png" alt="Coloured headshot project thumbnail">
-            <div class="card-content">
-              <h4>Regression Modeling and Inference</h4>
-              <p>Model selection, diagnostics, and interpretability.</p>
-            </div>
-          </a>
+          <img src="Images/ColouredHeadshot.png" alt="Coloured Headshot project" />
+          <h3>Neon Tactics</h3>
+          <p>Turn-based mech tactics in a neon cityscape.</p>
+          <a href="neon-tactics.html">Open project page</a>
         </article>
 
         <article class="card">
-          <a class="card-link" href="https://cran.r-project.org" target="_blank" rel="noopener noreferrer">
-            <img src="Images/RingPicture.JPG" alt="Ring picture project thumbnail">
-            <div class="card-content">
-              <h4>Time Series Forecasting</h4>
-              <p>ARIMA, ETS, and ensemble forecasts.</p>
-            </div>
-          </a>
+          <img src="Images/Headshot2.jpeg" alt="Headshot2 project" />
+          <h3>Shadow Rift</h3>
+          <p>Co-op roguelike with dynamic dungeon weaving and narrative shards.</p>
+          <a href="https://www.gog.com/game/the_witcher_3_wild_hunt" target="_blank" rel="noopener">View prototype (GOG placeholder)</a>
         </article>
 
         <article class="card">
-          <a class="card-link" href="https://towardsdatascience.com" target="_blank" rel="noopener noreferrer">
-            <img src="Images/campus%20snow.JPG" alt="Campus snow project thumbnail">
-            <div class="card-content">
-              <h4>Classification & ML Pipelines</h4>
-              <p>Cross-validation, feature engineering, and metrics.</p>
-            </div>
-          </a>
+          <img src="Images/campus snow.JPG" alt="Campus Snow project" />
+          <h3>Campus Snow: Winter Assault</h3>
+          <p>First-person snowbase infiltration with physics-based terrain warping.</p>
+          <a href="https://www.nintendo.com/games/detail/zelda-breath-of-the-wild-switch/" target="_blank" rel="noopener">View prototype (Nintendo placeholder)</a>
         </article>
+
       </div>
     </section>
 
-    <section id="about" class="about container">
-      <h3>About Me</h3>
-      <p>I build reproducible statistical analyses and data visualizations that help tell stories with data. I enjoy tidy workflows, clear plots, and sharing findings through reproducible reports.</p>
-    </section>
-
-    <section id="contact" class="contact container">
-      <h3>Contact</h3>
-      <p>Get in touch: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>Find resources and inspiration on <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">Kaggle</a>, <a href="https://posit.co" target="_blank" rel="noopener noreferrer">Posit</a>, and <a href="https://towardsdatascience.com" target="_blank" rel="noopener noreferrer">Towards Data Science</a>.</p>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I'm a video game designer specializing in level flow, UX for gameplay loops, and systems that encourage emergent play. I craft high-contrast, accessible experiences with strong theme, momentum, and spatial readability.</p>
+      <ul>
+        <li>Design tools: Unity, Unreal Engine 5, Tiled</li>
+        <li>Game systems: progression, AI behavior, loot economy</li>
+        <li>Genres: action, roguelike, strategy, narrative adventure</li>
+      </ul>
+      <a class="cta" href="mailto:youremail@example.com">Contact Me</a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 My Statistics Portfolio</p>
-    </div>
+  <footer>
+    <p>© 2026 Pixel Quest Studio • Portfolio built with game design flair</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
